@@ -1,21 +1,18 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement, incrementByAmount  } from "./CounterSlice"
-
+import useCounter from "./useCounter";
 
 const Counter = () => {
   
-  const count = useSelector((state) => state.counter.value);
-  const dispatch = useDispatch();
+  const { count, increment, decrement, reset } = useCounter(10); // 초기값 10
 
   return (
     <div>
-      <h2>Counter: {count}</h2>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
-      <button onClick={() => dispatch(incrementByAmount(5))}>+5</button>
+      <h1>Count: {count}</h1>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
+      <button onClick={reset}>Reset</button>
     </div>
   );
 };
 
-export default Counter;
+export default Counter

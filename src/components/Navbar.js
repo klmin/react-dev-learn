@@ -7,6 +7,7 @@ const navLinkStyle = ({ isActive }) => ({
 });
 
 const Navbar = () => {
+    console.log("Navbar.js")
   return (
     <nav>
       <ul>

@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 
 const UserList = () => {
   const { data, loading, error } = useFetch("https://jsonplaceholder.typicode.com/users");
-
+  console.log("UserList.js")
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 

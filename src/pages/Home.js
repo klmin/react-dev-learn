@@ -2,6 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    if (module.hot) {
+        console.log("🔥 Home 컴포넌트가 미리 로드됨 (import됨)");
+      }
   const navigate = useNavigate(); // ✅ 프로그래밍 방식으로 페이지 이동
 
   return (

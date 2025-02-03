@@ -1,6 +1,7 @@
 import React from "react";
-import Counter from "./Counter";
-import UserList from "./UserList";
+import Counter from "./components/Counter";
+import UserList from "./components/UserList";
+import WindowSize from "./components/WindowSize";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <h1>Redux Counter Example</h1>
       <Counter />
       <UserList />
+      <WindowSize />
     </div>
   );
 };

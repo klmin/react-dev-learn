@@ -1,13 +1,7 @@
-import React from "react";
 import Counter from "./Counter";
+import CounterOptimized from "./CounterOptimized";
 
-const App = () => {
-  return (
-    <div>
-      <h1>Redux Counter Example</h1>
-      <Counter />
-    </div>
-  );
-};
+export default CounterOptimized;
 
-export default App;
+
+

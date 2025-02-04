@@ -2,6 +2,10 @@ import React from "react";
 import useWindowSize from "../hooks/useWindowSize";
 
 const WindowSize = () => {
+    if (module.hot) {
+        
+        console.log("WindowSize.js")
+      }
   const { width, height } = useWindowSize();
 
   return (

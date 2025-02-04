@@ -4,7 +4,7 @@ import useCounter from "../hooks/useCounter";
 const Counter = () => {
   
   const { count, increment, decrement, reset } = useCounter(10); // 초기값 10
-
+  console.log("Counter.js")
   return (
     <div>
       <h1>Count: {count}</h1>

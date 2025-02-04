@@ -1,7 +1,7 @@
-import Counter from "./Counter";
-import CounterOptimized from "./CounterOptimized";
-
-export default CounterOptimized;
 
 
+import ParentComponent from './ParentComponent';
+import ParentComponentOptimized from './ParentComponentOptimized'
+
+export default ParentComponentOptimized;
 

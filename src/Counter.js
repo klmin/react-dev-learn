@@ -20,6 +20,8 @@ const Increase = () => {
       <h2>Number: {number}</h2>
       <p>Doubled: {doubledNumber}</p>
       <button onClick={() => setNumber(number + 5)}>Increase Number</button>
-
+    </div>
+  );
+}
 export default Increase;
 
